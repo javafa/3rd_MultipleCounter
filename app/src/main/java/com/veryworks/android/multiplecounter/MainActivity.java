@@ -47,8 +47,6 @@ class Counter extends Thread{
     public void run(){
 
         for(int i=0 ; i<10 ; i++){
-
-
             // 서브 thread 에서 UI 를 조작하기 위해 로직을 Main Thread 에 붙혀준다.
             count++;
             context.runOnUiThread(
@@ -60,7 +58,6 @@ class Counter extends Thread{
             );
 
             //Log.e("Count","=============="+count);
-
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
