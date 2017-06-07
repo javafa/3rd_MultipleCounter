@@ -52,7 +52,7 @@ class Counter extends Thread{
             context.runOnUiThread(
                 new Runnable(){
                     public void run(){
-                        textView.setText(count+""); // <- 여기만 메인스레드에서 동작한다.
+                        textView.setText(count+""); // <- 여기만 메인 thread에서 동작한다.
                     }
                 }
             );
