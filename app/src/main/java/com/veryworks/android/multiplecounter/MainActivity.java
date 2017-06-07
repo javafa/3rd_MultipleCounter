@@ -56,7 +56,7 @@ class Counter extends Thread{
                     }
                 }
             );
-
+            // Log 는 UI가 아니기 때문에 메인 thread로 옮기지 않아도 동작한다.
             //Log.e("Count","=============="+count);
             try {
                 Thread.sleep(1000);
